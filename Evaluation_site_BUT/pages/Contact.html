@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>BUT Contacts</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<div id="autrelogo">
+					<img src="../images/logo/logoOccitanie.png" alt="logo IUT Occitanie">
+					<img src="../images/logo/logoPaulSab.png" alt="logo Université Paul sabatier 3">
+				</div>
+				<div id="logoinfo">
+					<img  src="../images/logo/logoInfo.png" alt="Logo IUT informatique">
+				</div>
+			</div>
+			<nav>
+			  	<ul>
+			  		<li><a href="../index.html">Accueil</a></li>
+			    	<li><a href="presentation.html">Présentation du BUT &ensp;</a>
+			    	</li>
+			    	<li class="deroulant"><a href="#">Compétences &ensp;</a>
+			      		<ul class="sous">
+					        <li><a href="1dev.html">Compétence 1</a></li>
+					        <li><a href="2opti.html">Compétence 2</a></li>
+					        <li><a href="3MCD.html">Compétence 3</a></li>
+					        <li><a href="4donnees.html">Compétence 4</a></li>
+					        <li><a href="5projet.html">Compétence 5</a></li>
+					        <li><a href="6equipe.html">Compétence 6</a></li>
+				      	</ul>
+				    </li>
+				    <li class="deroulant"><a href="#">Paramètres &ensp;</a>
+			      		<ul class="sous">
+					        <li><a href="mode_sombre/pages_dark/Contact_dark.html">mode sombre</a></li>
+			    			<li><a href="Contact.html">Contact</a></li>
+			    		</ul>
+			    	</li>
+			    </ul>
+			</nav>
+		</header>
+		<main>
+			<!-- Page de Contacts -->
+			<div class="title"><h1>Prise de contact</h1></div>
+			<div class="Partie">
+				<h2>Formulaire de contact</h2>
+				<div class="articles">
+					<form method="post" action="traitement.php">
+						<div class="test1">
+							<div class="form_bouton">
+								<label for="prenom">Votre prénom :</label>
+								<input type="text" name="prenom" id="prenom" />
+								<label for="nom">Votre nom :</label>
+								<input type="text" name="nom" id="nom" />
+								<label for="email">Votre email :</label>
+								<input type="email" name="email" id="email" />
+								<div class="bouton">
+									<button class="favorite styled" type="button">Envoyer</button>
+								</div>
+							</div>
+							<div class="message">
+								<textarea name="ameliorer" id="ameliorer" rows="10" cols="50">Entrez votre message</textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="Partie">
+				<h2>Renseignement</h2>
+				<div class="articles">
+						<div class="imgArticles">
+							<img src="../images/imgArticles/Contact/Info.jpg" alt="IUT Informatique">
+						</div>
+						<div class="Adresse">
+							<p>IUT Paul Sabatier 115C Route de Narbonne 31077 TOULOUSE CEDEX 4</p>
+							<img  class="plan" src="../images/imgArticles/Contact/Plan.png" alt="Département Informatique">
+						</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer">
+				<div class="link_pages">
+					<div class="col">
+						<h3>Pages :</h3>
+						<ul>
+							<li><a href="../index.html">Accueil</a></li>
+							<li><a href="presentation.html">Présentation du BUT &ensp;</a>
+							<li><a href="Contact.html">Contact &ensp;</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h3>Compétences :</h3>
+						<ul>
+							<li><a href="1dev.html">Compétence 1</a></li>
+					        <li><a href="2opti.html">Compétence 2</a></li>
+					        <li><a href="3MCD.html">Compétence 3</a></li>
+					        <li><a href="4donnees.html">Compétence 4</a></li>
+					        <li><a href="5projet.html">Compétence 5</a></li>
+					        <li><a href="6equipe.html">Compétence 6</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="BUT_info">
+					<div class="col">
+						<h3>BUT Informatique :</h3>
+						<ul>
+							<li>BENAIM Eliott</li>
+							<li>CABARET Line</li>
+							<li>HMADOUCH Anass</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="lien">
+				<a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" title="site externe">CNIL - RGPD</a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,630 @@
+/* Style général */
+body{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Fin style général */
+
+/* squelette */
+    /* header */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Avenir ;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FF0000;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav li:hover{
+    background-color: #EE0000;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.deroulant > a::after{
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+#logo{
+    display: flex;
+}
+#autrelogo{
+    display: block;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 50%;
+ }
+#logoinfo{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+    margin-top: 1%;
+    width: 50%;
+}
+    /* Fin header */
+
+
+    /* Footer */
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #555;
+    bottom: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    flex-flow: column wrap;
+}
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.col {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    flex-flow:column nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col a{
+    color: white;
+    text-decoration: none;
+}
+.col a:hover{
+    color: red;
+    transition: 0.1s;
+}
+.col h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: white;
+}
+.col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.col ul li {
+    color: white;
+    font-size: 14px;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.col ul li:hover {
+    color: red;
+    transition: 0.1s;
+}
+.clearfix {
+  clear: both;
+}
+.link_pages{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.BUT_info{
+    margin: auto 100px auto auto;
+}
+.footer{
+    display: flex;
+    width: 100%;
+}
+.lien{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.lien a{
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lien a:hover{
+    color: blue;
+    transition: 0.1s;
+}
+    /* Fin Footer */
+/* Fin Squelette */
+
+/* Partie (commun à toutes les pages) */
+.Partie{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.Partie h2{
+    font: bold 35px serif;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+/* Fin Partie */
+
+
+/* Articles (commun à toutes les pages) */
+.title h1{
+    font: bold 40px serif;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-decoration: underline;
+    color: black;
+}
+.imgArticles img{
+    width: 200px;
+}
+.articles{
+    display: flex;
+    margin-top: 1%;
+    background-color: #BABABA;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1%;
+}
+.imgArticles{
+    display: flex;
+    margin-left: 1%;
+    margin-right: 1%;
+    align-items: center;
+}
+.txtArticles{
+    display: flex;
+    margin-right: 1%;
+    margin-left: 3%;
+    flex-flow: wrap;
+    align-items: center ;
+}
+.txtArticles a{
+    font: italic 11px sans-serif ;
+}
+.src{
+    font: 12px sans-serif;
+}
+.txtArticles p{
+    margin-bottom: 4px;
+}
+.titreArticles{
+    display: flex;
+    font: bold 16px sans-serif;
+    margin: 2px;
+    margin-top: 2px;
+    background-color: #FFFFFF;
+    border-top: 2px solid black;
+    padding: 1%;
+}
+.articles h3{
+    font: bold 16px sans-serif;
+}
+.articles p{
+    font: 13px sans-serif;
+}
+
+#imgIUTArticles :hover{
+    width: 300px;
+}
+#imgIUTArticles img{
+    width: 200px;
+}
+/* Fin Articles */
+
+
+/* Tableau (pages compétences) */
+.TabRessources table {
+  width: 100%;
+  background-color: #BABABA;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.TabRessources thead th {
+  width: 5%;
+}
+.TabRessources th, td {
+  padding: 20px;
+  border-collapse: collapse;
+}
+/* Fin Tableau */
+
+
+/* Apprentissage Critique (pages compétences) */
+.imgAC{
+    display: flex;
+    margin-left: 1%;
+    margin-right: 1%;
+    align-items: center;
+}
+.ACcompetence{
+    display: flex;
+    margin-right: 1%;
+    margin-left: 3%;
+    align-items: center;
+}
+.ACcompetence ul{
+    list-style-type: none;
+}
+.ACcompetence li:before{
+    content: '- ';
+}
+.imgAC img{
+    width: 150px;
+}
+/* fin Apprentissage Critique */
+
+
+/* Contact (page d'accueil) */
+#contactTxt{
+    display: table;
+    list-style-type: none;
+}
+#contactTxt ul li{
+    list-style-type: none;
+    font: 13px sans-serif; 
+}
+#contactTxt h5{
+    font: bold 14px sans-serif;
+}
+#contactTxt h6{
+    font: 14px sans-serif;
+}
+.personnelTxt{
+    margin-left: 10%;
+}
+/* Fin Contact */
+
+
+/* Ressources (pages compétences) */
+.Ressources{
+    display: flex;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.ressource{
+    display: flex;
+    flex-wrap: wrap;
+    color: #FF0000;
+}
+.ressource p{
+    font: bold 20px sans-serif;;
+}
+
+.Nressource{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    
+}
+.Nressource h3{
+    font: bold 20px sans-serif;
+}
+
+.Competences{
+    display: flex;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+.Competences h4{
+    width: 100%;
+    margin-bottom: 2px;
+
+}
+.Competences ul{
+    list-style-type: none;
+}
+/* Fin Ressources */
+
+
+/* Hyperlink (pages Competences)*/
+.Hyperlink{
+    display: flex;
+    justify-content: flex-end;
+}
+.Hyperlink img{
+    width: 50px;
+}
+/* Fin Hyperlink */
+
+/* Mise en forme du titre (page présentation) */
+.titre {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+/*fin de la Mise en forme du titre */
+
+/* Mise en forme de la Partie 1 (page présentation) */
+.Partie1{
+    display: flex;
+    margin: 1%;
+    margin-top: 1%;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    background: #DDDDDD;
+    flex-wrap: wrap;
+}
+    /* Mise en forme du texte 1ere Partie(page présentation) */
+.Table1 {
+    margin: 1%;
+    width: auto;
+    max-width: 350px;
+    margin: auto auto auto 5%;
+}
+.Table1 p{
+    font: 20px sans-serif;
+}
+.txtTable1{
+    flex-wrap: wrap;
+}
+    /* fin de la Mise en forme texte 1ere Partie*/
+
+    /* Mise en forme du tableau des compétences/ressources 1ere Partie (page présentation) */
+.Table2 {
+    display: flex;
+    text-align: center;
+    width: auto;
+    max-width: 500px;
+    min-width: 50%;
+    margin: auto 80px auto auto;
+    margin-bottom: 1%;
+}
+.Table2 td{
+    border: 1px solid #AAAAAA;
+    font-size: 15px;
+}
+.Table2 th{
+    border: 1px solid #AAAAAA;
+    font-size: 15px;
+}
+.Table2 thead {
+    background: #808080;
+}
+.Table2 thead th {
+    font-weight: normal;
+}
+    /* fin de la Mise en forme du tableau des compétences/ressources 1ere Partie */
+
+    /* Mise en forme texte de la 1ere partie (page présentation)*/
+.Table3 {
+    margin: 1%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    align-self: flex-start;
+    min-width: 100%;
+    text-align: center;
+}
+.Table3 h2{
+    font: bold 25px serif;
+}
+    /* fin de la Mise en forme texte de la 1ere partie */
+/* fin de la Mise en forme de la Partie 1*/
+
+
+/* décorateur */
+.décorateur{
+    border-top: 5px solid black;
+    margin: 1%;
+}
+/* Fin décorateur */
+
+
+/* Mise en forme de la Partie 2 (page présentation)*/
+.Partie2 {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 1%;
+    background: #DDDDDD; 
+}
+.PartieComp{
+    display: flex;
+    margin: 1%;
+    margin-top: 1%;
+    position: relative;
+}
+    /* Mise en forme des img des comp (page présentation) */
+.logoComp{
+    display: block;
+    margin: 0.5%;
+    display: flex;
+    position: relative;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logoComp2{
+    display: block;
+    margin: 0.5%;
+    display: flex;
+    position: relative;
+    float: right;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+    /* fin de la Mise en forme des img des comp */
+
+    /* Tableau des ressources (page présentation) */
+.Ress {
+    display: flex;
+    margin: 0.5%;
+    text-align: center;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Ress th{
+    font-size: 20px;
+    background: #A9A9A9;
+    border-radius: 20px;
+    font-weight: normal;
+    padding: 22px;
+    border: 2px solid black;  
+}
+.resstoto {
+    display: flex;
+    flex-wrap: wrap;
+}
+.resstoto .Ress {
+    justify-content: space-around;
+    align-content: stretch;
+    flex-basis: 30%;
+}
+    /* fin Tableau des ressources */
+/* fin de la Mise en forme de la Partie 2*/
+
+
+/* Page Contact */
+    /* Formulaire de contact (Page Contact)*/
+.message{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10%;
+    margin-right: auto;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 40px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: red;
+    box-shadow: inset -2px -2px 3px black;
+}
+
+.styled:hover {
+    background-color: #E21115;
+}
+.test1{
+    display: flex;
+    margin-left: auto;
+}
+
+.form_bouton{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    line-height: 30px;
+}
+
+.Adresse{
+    display: flex;
+    margin-right: 1%;
+    margin-left: 3%;
+    flex-flow: nowrap;
+    flex-direction: column;
+}
+
+.plan{
+    margin-top: 2%;
+    max-height: 775px;
+    max-width: 367px;
+}
+    /* Fin Formulaire de contact */
+/* Fin Page Contact */
+
+/* Alyze */
+
+h2 strong{
+    font-weight: normal;
+    font: bold 35px serif;
+}
+p strong{
+    font-weight: normal;
+    font: 13px sans-serif;
+}
+ul strong{
+    font-weight: normal;
+    font: 13px sans-serif;
+}
+aside{
+    font-weight: normal;
+}
+h2 strong{
+    font-weight: normal;
+    font: bold 40px serif;
+}
+
+/* Fin Alyze */
